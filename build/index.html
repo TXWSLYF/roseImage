@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玫瑰图</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pure-min.css">
+</head>
+
+<body>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="yulei">鱼类</label>
+                <input id="yulei" type="number" placeholder="肉食性鱼类%">
+                <input type="number" placeholder="物种数">
+                <input type="number" placeholder="土著鱼类密度">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="zaolei">藻类</label>
+                <input id="zaolei" type="number" placeholder="shannon指数">
+                <input type="number" placeholder="参数二">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="shuizhi">水质</label>
+                <input id="shuizhi" type="number" placeholder="COD">
+                <input type="number" placeholder="BOD">
+                <input type="number" placeholder="电导率">
+                <input type="number" placeholder="TP">
+                <input type="number" placeholder="TN">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="dixidongwu">底栖动物</label>
+                <input id="dixidongwu" type="number" placeholder="EPT百分比">
+                <input type="number" placeholder="丰富度">
+                <input type="number" placeholder="BI指数">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="shuiwen">水文</label>
+                <input id="shuiwen" type="number" placeholder="参数一">
+                <input type="number" placeholder="参数二">
+                <input type="number" placeholder="参数三">
+            </div>
+
+            <div class="pure-controls">
+                <button id='drawBtn' class="pure-button pure-button-primary">绘制</button>
+                <button id='resetBtn' class="pure-button pure-button-primary">清空画板</button>
+                <button id='saveBtn' class="pure-button pure-button-primary">存为图片</button>
+            </div>
+        </fieldset>
+    </form>
+    <canvas id='myCanvas' width="600" height="600" class="my-canvas"></canvas>
+</body>
+<script src="./bundle.js"></script>
+
+</html>
